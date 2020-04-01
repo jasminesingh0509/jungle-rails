@@ -2,12 +2,26 @@
 
   <header class="page-header">
     <h1>Order #<%= @order.id %></h1>
+    
   </header>
 
   <div class="order-summary jumbotron">
-    <h4>Thank you for your order!</h4>
+    <h4>Thank you for your order <%= @order.email %>! We hope to see you again soon!</h4>
+    <table>
+    <% @order.line_items.each do |line_item| %>
+        <img style="width: 50px; height: 50px;" src="<%= line_item.product.image %>">
+        <p>Product: <%=line_item.product.name %></p>
+        <p>Description: <%=line_item.product.description %></p>
+        <p>Quantity: <%= line_item.quantity %></p>
+        <p>Price: <%= line_item.product.price_cents %></p>
+      <% end %>
+      </table>
   </div>
 
   <%= link_to "Continue Shopping", root_path, class: 'btn btn-lg btn-primary' %>
 
 </section>
+
+
+
+
