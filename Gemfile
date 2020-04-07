@@ -59,3 +59,10 @@ group :production do
   gem 'newrelic_rpm'
   gem 'rails_12factor'
 end
+
+ group :test do
+    gem 'capybara'
+    gem 'poltergeist'
+    gem 'database_cleaner'
+    gem 'simplecov', '0.13.0'# Added line, this version works for my ruby version 2.3.0
+  end
