@@ -33,4 +33,4 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 
 Jasmine Singh - Lighthouse Labs, 2020
 
-Main Page !["User logged in on Main page"]()
+Main Page !["User logged in on Main page"](https://github.com/jasminesingh0509/jungle-rails/blob/master/docs/Jungle%20logged%20in.png?raw=true)
